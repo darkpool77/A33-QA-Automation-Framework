@@ -17,8 +17,8 @@ public class BaseTest {
     }
 
     @BeforeMethod
-    public static void launchBrowser(String browser) {
-        driver = pickBrowser(System.getProperty("browser"));
+    public static void launchBrowser() {
+        driver = pickBrowser( System.getProperty("browser"));
 
 
     }
@@ -35,10 +35,6 @@ public class BaseTest {
 
             default:
                 return driver = new ChromeDriver();
-
-
-
-
 
         }
 
